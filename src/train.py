@@ -24,7 +24,7 @@ logging.basicConfig(
 
 
 def load_and_prepare_data():
-    """Loads the California Housing dataset."""
+    """Loads the California Housing dataset"""
     try:
         logging.info("Loading California Housing dataset...")
         housing = fetch_california_housing()
