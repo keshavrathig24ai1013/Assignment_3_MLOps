@@ -17,7 +17,7 @@ class QuantizedLinearRegression(nn.Module):
 
 def quantize_float16(params, param_name="parameter"):
     params = np.array(params, dtype=np.float32)
-    print(f"\n Quantizing {param_name} with float16 precision...")
+    print(f"\n Quantizing {param_name} with float16 precision..")
     quantized = params.astype(np.float16)
     dequantized = quantized.astype(np.float32)
     error = np.mean(np.abs(params - dequantized))
