@@ -43,7 +43,7 @@ def train_model(X, y):
             X, y, test_size=TEST_SIZE, random_state=SEED
         )
 
-        logging.info("Training the Linear Regression model...")
+        logging.info("Training the Linear Regression model..")
         model = LinearRegression()
         model.fit(X_train, y_train)
 
